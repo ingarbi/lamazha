@@ -146,12 +146,13 @@
             width: 100%;
             border-collapse: collapse;
             font-size: 15px;
-            min-width: 600px;
+            /* Убираем min-width, чтобы таблица могла сужаться */
         }
         th, td {
             padding: 10px 8px;
             text-align: center;
             border-bottom: 1px solid #eee;
+            white-space: nowrap; /* чтобы время не переносилось, но при этом колонки могут быть уже */
         }
         th {
             background-color: #f8f9fa;
@@ -167,19 +168,70 @@
             background-color: #e8f4f8;
         }
 
-        /* Адаптивность */
+       /* Адаптивность */
         @media (max-width: 600px) {
-            .controls { flex-direction: column; align-items: stretch; gap: 15px; }
-            .title-header { font-size: 20px; margin: 5px 0; }
-            select { width: 100%; }
-            .btn-download { width: 100%; }
-            .container { padding: 10px; }
-            .header { margin: 0 -10px 15px -10px; }
-            th, td { padding: 8px 5px; font-size: 13px; }
+            .controls { 
+                flex-direction: column; 
+                align-items: stretch; 
+                gap: 12px; 
+            }
+            .title-header { 
+                font-size: 20px; 
+                margin: 5px 0; 
+            }
+            select { 
+                width: 100%; 
+                text-align: center;          /* центрирует текст в выпадающем списке */
+                text-align-last: center;     /* центрирует выбранный пункт (для некоторых браузеров) */
+            }
+            .btn-download { 
+                width: 100%; 
+            }
+            .container { 
+                padding: 10px; 
+            }
+            .header { 
+                margin: 0 -10px 15px -10px; 
+            }
+            th, td { 
+                padding: 6px 3px; 
+                font-size: 13px; 
+            }
         }
+
         @media (max-width: 450px) {
-            th, td { font-size: 11px; padding: 6px 4px; min-width: 35px; }
-            table { min-width: 450px; }
+            body {
+                padding: 10px 5px; /* уменьшаем боковые отступы на самом теле */
+            }
+            .container {
+                padding: 8px 5px;
+            }
+            .header {
+                margin: 0 -5px 12px -5px;
+                padding: 10px 12px;
+            }
+            .header h1 {
+                font-size: 22px;
+            }
+            th, td { 
+                font-size: 11px; 
+                padding: 4px 2px; 
+            }
+        }
+
+        @media (max-width: 380px) {
+            th, td { 
+                font-size: 10px; 
+                padding: 3px 1px; 
+            }
+            .header h1 {
+                font-size: 19px;
+                letter-spacing: 1px;
+            }
+            .btn-download {
+                font-size: 14px;
+                padding: 8px 14px;
+            }
         }
     </style>
 </head>
@@ -203,10 +255,10 @@
                     <th>Денош</th>
                     <th>Сатассар</th>
                     <th>Малхкхетар</th>
-                    <th>Делкъа ха</th>
-                    <th>Малхбуза ха</th>
-                    <th>Маьрк1ижа ха</th>
-                    <th>Пхьера ха</th>
+                    <th>Делкъа</th>
+                    <th>Малхбуза</th>
+                    <th>Маьрк1ижа</th>
+                    <th>Пхьера</th>
                 </tr>
             </thead>
             <tbody id="tableBody"></tbody>
