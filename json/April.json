@@ -23,10 +23,10 @@
             {"day":22,"fajr":"3:35","sunrise":"5:04","zuhr":"12:20","asr":"15:50","maghrib":"19:07","isha":"20:37"},
             {"day":23,"fajr":"3:33","sunrise":"5:03","zuhr":"12:20","asr":"15:50","maghrib":"19:09","isha":"20:39"},
             {"day":24,"fajr":"3:31","sunrise":"5:02","zuhr":"12:20","asr":"15:51","maghrib":"19:12","isha":"20:42"},
-            {"day":25,"fajr":"3:28","sunrise":"5:00","zuhr":"12:20","asr":"15:51","maghrib":"19:12","isha":"20:43"},
+            {"day":25,"fajr":"3:28","sunrise":"5:00","zuhr":"12:20","asr":"15:51","maghrib":"19:12","isha":"20:42"},
             {"day":26,"fajr":"3:26","sunrise":"4:59","zuhr":"12:20","asr":"15:51","maghrib":"19:13","isha":"20:43"},
             {"day":27,"fajr":"3:23","sunrise":"4:58","zuhr":"12:20","asr":"15:51","maghrib":"19:14","isha":"20:44"},
-            {"day":28,"fajr":"3:20","sunrise":"4:56","zuhr":"12:20","asr":"15:52","maghrib":"19:15","isha":"20:45"},
+            {"day":28,"fajr":"3:20","sunrise":"4:56","zuhr":"12:20","asr":"15:51","maghrib":"19:15","isha":"20:45"},
             {"day":29,"fajr":"3:18","sunrise":"4:55","zuhr":"12:20","asr":"15:52","maghrib":"19:16","isha":"20:46"},
             {"day":30,"fajr":"3:17","sunrise":"4:55","zuhr":"12:20","asr":"15:52","maghrib":"19:17","isha":"20:47"}
         ]
